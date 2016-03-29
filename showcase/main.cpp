@@ -5,6 +5,7 @@
 
 int main(int argc, char *argv[])
 {
+    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
 
     foreach (const QString &var, QProcess::systemEnvironment()) {
